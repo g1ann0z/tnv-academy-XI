@@ -105,6 +105,13 @@ footer {
 footer section {
     padding: 32px;
 }
+.bordered-card-body {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 16px;
+    height: 80px;
+    box-shadow: 1px 1px 2px lightgray;
+}
 
 #bere {
     text-align: right;
