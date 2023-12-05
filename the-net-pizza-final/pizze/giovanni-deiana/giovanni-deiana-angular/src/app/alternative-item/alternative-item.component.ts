@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Piatto } from '../models/Piatto';
 
 @Component({
   selector: 'gnnz-alternative-item',
@@ -9,6 +10,9 @@ import { Component } from '@angular/core';
   styleUrl: './alternative-item.component.scss'
 })
 export class AlternativeItemComponent {
+@Input() piatto!: Piatto;
+
+
 
 }
 

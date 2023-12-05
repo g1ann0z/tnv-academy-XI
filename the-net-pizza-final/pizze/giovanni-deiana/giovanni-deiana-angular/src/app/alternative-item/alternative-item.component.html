@@ -1,1 +1,12 @@
-<p>alternative-item works!</p>
+<div class="card shadow">
+    <div class="card-image">
+    <img [src]="piatto.imageUrl" class="card-img-top" [alt]="piatto.title"
+    />
+    </div>
+    <div class="card-body">
+    <h5 class="card-title">{{ piatto.title | titlecase }} - {{ piatto.price | currency:'€'}}</h5>
+            <p class="card-text">
+            {{ piatto.description }}
+            </p>
+    </div>
+</div>
