@@ -1,6 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { AlternativeItemComponent } from '../alternative-item/alternative-item.component';
-import { CommonModule } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Piatto } from '../models/Piatto';
 import { MenuService } from '../services/menu.service';
 
@@ -13,7 +11,7 @@ import { MenuService } from '../services/menu.service';
   styleUrl: './alternative.component.scss'
 })
 export class AlternativeComponent implements OnInit{
-    menuItems: any[] = [];
+    menuItems: Piatto[] = [];
 
     constructor (private menuService: MenuService) {}
 
@@ -23,7 +21,7 @@ export class AlternativeComponent implements OnInit{
         });
     }
 
-    buildMenu(menu: any[]): void {
+    buildMenu(menu: Piatto[]): void {
       this.menuItems = menu;
     }
 
