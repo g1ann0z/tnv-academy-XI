@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Piatto } from '../models/Piatto';
 import { MenuService } from '../services/menu.service';
+import { CommonModule } from '@angular/common';
+import { AlternativeItemComponent } from '../alternative-item/alternative-item.component';
 
 
 @Component({
