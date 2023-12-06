@@ -7,6 +7,6 @@
     </div>
 
     <div id="piatti" class="row"></div>
-    <gnnz-alternative-item [piatto]="piatto"></gnnz-alternative-item>
+    <gnnz-alternative-item *ngFor="let item of menuItems" [piatto]="item"></gnnz-alternative-item>
 
 </div> 

@@ -10,7 +10,9 @@ import { Piatto } from '../models/Piatto';
   styleUrl: './alternative-item.component.scss'
 })
 export class AlternativeItemComponent {
-@Input() piatto!: Piatto;
+//@Input() piatto!: Piatto;
+
+@Input() piatto!: any;
 
 
 
